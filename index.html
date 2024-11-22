@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem é o melhor do mundo?</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: url('cacarato.jpg') no-repeat center center fixed;
+      background-size: cover; /* Ajusta para cobrir toda a tela */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    #cristiano, #messi, #neymar {
+      background-color: #ff1900;
+      color: white;
+    }
+    #cristiano:hover, #messi:hover, #neymar:hover {
+      background-color: #ff1900;
+    }
+    #cacarato {
+      background-color: #ff0000;
+      color: white;
+    }
+    #cacarato:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quem é o melhor do mundo? ⚽</h1>
+  <button id="cristiano">Cristiano Ronaldo</button>
+  <button id="messi">Messi</button>
+  <button id="neymar">Neymar</button>
+  <button id="cacarato">Caça Rato</button>
+
+  <script>
+    // Botões das opções "erradas"
+    document.getElementById("cristiano").addEventListener("click", () => {
+      alert("Erro! Essa resposta está incorreta. Tente novamente.");
+    });
+
+    document.getElementById("messi").addEventListener("click", () => {
+      alert("Erro! Essa resposta está incorreta. Tente novamente.");
+    });
+
+    document.getElementById("neymar").addEventListener("click", () => {
+      alert("Erro! Essa resposta está incorreta. Tente novamente.");
+    });
+
+    // Botão "Caça Rato"
+    document.getElementById("cacarato").addEventListener("click", () => {
+      alert("Esse é o verdadeiro melhor do mundo! 🔥");
+      window.location.href = "https://www.youtube.com/shorts/k1XMOHNUnoI"; // Substitua pelo link do vídeo desejado
+    });
+  </script>
+</body>
+</html>
